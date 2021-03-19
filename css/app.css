@@ -1,0 +1,84 @@
+body {
+  height: 100%;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-attachment: fixed;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+.card {
+  width: 80%;
+  background: white;
+  border-radius: 3%;
+  margin: auto;
+  margin-top: 40%;
+  padding: 20px;
+}
+
+img {
+  position: relative;
+  top: -125px;
+}
+
+h1 {
+  margin-top: -80px;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.accordion {
+  margin-left: 15px;
+}
+
+.accordion_header {
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.accordion_header.active {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.accordion_header::after {
+  content: "\02C7";
+  font-size: 2rem;
+  color: hsl(14, 88%, 65%);
+  display: block;
+  position: absolute;
+  top: -30%;
+  right: 1rem;
+}
+
+.accordion_header.active::after {
+  content: "\02C6";
+  font-size: 1.5rem;
+}
+
+.accordion_header.active + .accordion_content {
+  display: block;
+}
+
+.accordion_content {
+  position: relative;
+  display: none;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 5px;
+}
+
+.accordion_content.active {
+  height: 150px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+}
